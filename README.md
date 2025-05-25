@@ -3,5 +3,6 @@
 
 서버 프로그램(예정)
 
-1. VPN
-2. webDAV 기반 웹 서버 프로그램
+1. webdav
+2. VPN
+3. DDNS
