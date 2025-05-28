@@ -7,6 +7,6 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./data:/var/www/html/webdav
+      - /e/Media:/var/www/html/webdav
     env_file:
       - info.env
