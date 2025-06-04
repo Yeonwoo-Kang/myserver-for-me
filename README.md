@@ -5,6 +5,7 @@
 ## 전제 조건
 - Docker/Docker Desktop 설치
 - Github 연결
+- 윈도우즈를 사용중인 경우, WSL2 설치
 
 ## 진행 상황
 ### 설치됨
@@ -19,14 +20,16 @@
 
 
 ## info.env 
-환경 변수를 저장하는 파일이며 직접 작성해야합니다.
+환경 변수를 저장하는 파일이며 직접 작성해야합니다.<br>
 
 작성 위치: 디렉토리 리포지토리를 클론 한 디렉토리
 
 ### 작성 내용
-USERNAME=webdav에서 사용할 유저 이름
-PASSWORD=webdav 유저의 비밀번호
+USERNAME=[webdav에서 사용할 유저 이름]<br>
+PASSWORD=[webdav 유저의 비밀번호]<br>
+
+<br>
 
 **예**
-USENAME=imuser
-PASSWORD=itspassword
+USENAME=imuser<br>
+PASSWORD=itspassword<br>
