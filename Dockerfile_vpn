@@ -1,0 +1,18 @@
+FROM rockylinux:9
+
+SHELL [ "/bin/bash" , "-c" ]
+
+ARG SERVERNAME
+
+ENV SERVERNAME=${SERVERNAME}
+
+RUN dnf update -y
+
+RUN dnf --enablerepo=epel -y install openvpn easy-rsa net-tools && \
+    # easy-rsa 설정
+    cd /usr/share/easy-rsa/3 && \
+    # easy-rsa 초기화 및 CA 생성
+    ./easyrsa init-pki && \
+    # nopass 옵션 : 비밀번호 없음
+    ./easyrsa build-ca nopass && \
+    ./easyrsa build-server-full ${SERVERNAME} nopass
