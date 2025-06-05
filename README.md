@@ -18,6 +18,8 @@
 ### 작성 내용
 USERNAME=[webdav에서 사용할 유저 이름]<br>
 PASSWORD=[webdav 유저의 비밀번호]<br>
+NOIPADDRESS=[no-ip에 등록한 계정]<br>
+NOIPPASSWORD=[no-ip에 등록한 계정 비밀번호]<br>
 
 <br>
 
@@ -25,6 +27,8 @@ PASSWORD=[webdav 유저의 비밀번호]<br>
 ```
 USENAME=imuser
 PASSWORD=itspassword
+NOIPADDRESS=noipaddress@gmail.com
+NOIPPASSWORD=noippassword
 ```
 
 ---
@@ -34,11 +38,11 @@ PASSWORD=itspassword
 
 1. webdav
 2. VPN(OpenVPN)
+3. DDNS(NO-IP)
 
 ### 설치 예정
 
-1. DDNS(NO-IP)
-2. HTTPS 보안
+1. HTTPS 보안
 
 
 
