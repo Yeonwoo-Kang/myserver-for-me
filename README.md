@@ -10,7 +10,7 @@
 - info.env 의 작성
 - 과자 한 봉지
 
-## info.env 
+### info.env 의 작성
 환경 변수를 저장하는 파일이며 직접 작성해야합니다.<br>
 
 작성 위치: 리포지토리를 클론 한 디렉토리
@@ -22,8 +22,10 @@ PASSWORD=[webdav 유저의 비밀번호]<br>
 <br>
 
 **예**
-`USENAME=imuser<br>`
-`PASSWORD=itspassword<br>`
+```
+USENAME=imuser
+PASSWORD=itspassword
+```
 
 ---
 
