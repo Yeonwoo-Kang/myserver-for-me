@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-# 환경 변수 로드
-source /usr/local/src/info.env
-export NOIPADDRESS NOIPPASSWORD
-
 # noip2 설정(필요시)
 if [ ! -f /usr/local/etc/no-ip2.conf ]; then
   /usr/local/src/no-ip.sh

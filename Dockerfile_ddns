@@ -2,9 +2,14 @@ FROM rockylinux:9
 
 SHELL [ "/bin/bash", "-c" ]
 
-COPY ./info.env /usr/local/src/info.env
-COPY ./no-ip.sh /usr/local/src/no-ip.sh
-COPY ./no-ip-master.sh /no-ip-master.sh
+COPY no-ip-master.sh /no-ip-master.sh
+COPY no-ip.sh /usr/local/src/no-ip.sh
+
+ARG NOIPADDRESS
+ARG NOIPPASSWORD
+
+ENV NOIPADDRESS=${NOIPADDRESS}
+ENV NOIPPASSWORD=${NOIPPASSWORD}
 
 RUN dnf -y update && \
     dnf install -y wget gcc make && \
