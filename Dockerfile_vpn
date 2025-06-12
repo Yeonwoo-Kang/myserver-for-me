@@ -12,11 +12,12 @@ RUN dnf update -y && \
     dnf install -y epel-release && \
     dnf install -y openvpn && \
     dnf install -y easy-rsa && \
-    dnf install -y firewalld
+    dnf install -y firewalld && \
+    chmod +x /openvpn.sh
 
 # 인증서 설정 start
 RUN mkdir /etc/openvpn/easy-rsa && \
-    ln -s /usr/share/easy-rsa /etc/openvpn/easy-rsa
+    ln -s /usr/share/easy-rsa /etc/openvpn/easy-rsa 
     
 # OpenVPN 서버의 CA(인증기관) 인증서 생성
 WORKDIR /etc/openvpn/easy-rsa

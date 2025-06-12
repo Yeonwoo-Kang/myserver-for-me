@@ -28,3 +28,11 @@ services:
       - ./openvpn:/home/openvpn
     env_file:
       - info.env
+  
+  ddns:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile_ddns
+    container_name: ddns
+    env_file:
+      - info.env
